@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="discription" content="">
+  <meta name="keywords" content="">
+  <title>Login System</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/prject.css">
+</head>
+<body>
+
+  <div id="signInForm" class="container w-50 p-5 shadow my-5">
+    <div class="row text-center">
+      <h1 class="my-4">Smart Login System</h1>
+      <div class="form-container d-flex flex-wrap justify-content-center">
+        <input  autofocus='true' id="loginEmail" type="text" class="form-control my-1 bg-transparent text-white" placeholder="Enter your email">
+        <input id="loginPassword" type="password" class="form-control my-1 bg-transparent text-white" placeholder="Enter your password">
+        <div id="loginAlert" class="d-none alert alert-danger w-100 p-1" role="alert"></div>          
+        <a id="goLoginPage"> <button id="loginButtun" class="my-3 py-2 px-3 rounded-1" > Login</button> </a>
+      </div>
+      <p class="lead mx-auto w-50 text-white">Don’t have an account? <a id="goSignUp" class="text-white text-decoration-none">Sign Up</a></p>
+    </div>
+  </div>
+
+  <div id="signUpForm" class="d-none container w-50 p-5 shadow my-5">
+    <div class="row text-center">
+      <h1 class="my-4">Smart Login System</h1>
+      <div class="form-container d-flex flex-wrap justify-content-center">
+        <input id="signUpName" type="text" class="form-control my-1 bg-transparent text-white" placeholder="Enter your name">
+        <input id="signUpEmail" type="text" class="form-control my-1 bg-transparent text-white" placeholder="Enter your email">
+        <input id="signUpPassword" type="password" class="form-control my-1 bg-transparent text-white" placeholder="Enter your password">
+        <div id="signUpAlert" class="d-none alert alert-danger w-100 p-1" role="alert"></div>          
+        <button id="signUpButtun" class="my-3 py-2 px-3 rounded-1" >Sign Up</button>
+      </div>
+      <p class="lead mx-auto w-50 text-white">You have an account? <a id="goSignIn" class="text-white text-decoration-none">Signin</a></p>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/code.js"></script>
+</body>
+</html>
